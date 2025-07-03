@@ -16,8 +16,8 @@ export const AuthProvider = ({ children }) => {
 
   // Simple admin credentials (in production, use proper authentication)
   const ADMIN_CREDENTIALS = {
-    username: 'admin',
-    password: 'admin123'
+    username: 'rhnzky',
+    password: 'rehan0311'
   }
 
   useEffect(() => {
