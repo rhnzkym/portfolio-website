@@ -14,35 +14,19 @@ export const useData = () => {
 const defaultExperiences = [
   {
     id: 1,
-    title: 'Frontend Developer Intern',
-    company: 'Tech Startup Indonesia',
+    title: 'Asisten Praktikum',
+    company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
     location: 'Jakarta, Indonesia',
-    period: 'Jun 2024 - Aug 2024',
-    type: 'Internship',
-    description: 'Developed responsive web applications using React.js and Tailwind CSS. Collaborated with design team to implement pixel-perfect UI components and improved website performance by 40%.',
+    period: 'Sep 2023 – Jun 2025',
+    type: 'Paruh Waktu / Akademik',
+    description: 'Mendampingi dosen dalam pelaksanaan praktikum untuk lima mata kuliah berbeda selama tiga semester. Tugas mencakup pembuatan soal kuis, penilaian laporan, pembimbingan teknis, serta membantu mahasiswa dalam menyelesaikan tugas dan proyek praktikum.\n\nMata kuliah yang dibantu:\n• Sistem Enterprise – Mengajarkan dasar penggunaan SAP dan menyusun soal kuis\n• Algoritma dan Pemrograman – Membimbing dasar bahasa pemrograman Python\n• Pengembangan Aplikasi Website – Mengajarkan HTML, PHP, serta framework Laravel\n• Pemrograman Berorientasi Objek (PBO) – Menjelaskan konsep OOP menggunakan Java (encapsulation, inheritance, dll)\n• Manajemen Rantai Pasok (MRP) – Membimbing praktikum SAP modul SCM 500',
     achievements: [
-      'Built 5+ reusable React components',
-      'Improved website loading speed by 40%',
-      'Collaborated with 3-person development team'
+      'Menyusun soal kuis, rubrik penilaian, dan mengevaluasi laporan praktikum',
+      'Memberikan bimbingan teknis secara rutin dan diskusi aktif di kelas',
+      'Mendukung proses pembelajaran praktikum berbasis proyek'
     ],
-    technologies: ['React.js', 'Tailwind CSS', 'JavaScript', 'Git'],
-    color: 'bg-blue-500'
-  },
-  {
-    id: 2,
-    title: 'UI/UX Design Freelancer',
-    company: 'Various Clients',
-    location: 'Remote',
-    period: 'Jan 2024 - Present',
-    type: 'Freelance',
-    description: 'Designed user interfaces for mobile and web applications. Created wireframes, prototypes, and conducted user research to improve user experience across different platforms.',
-    achievements: [
-      'Completed 10+ design projects',
-      'Achieved 95% client satisfaction rate',
-      'Designed for 3 different industries'
-    ],
-    technologies: ['Figma', 'Adobe XD', 'Sketch', 'Principle'],
-    color: 'bg-purple-500'
+    technologies: ['Python', 'Java', 'SAP (Fundamental & SCM 500)', 'Laravel', 'PHP', 'HTML', 'Visual Studio Code', 'Git'],
+    color: 'bg-green-500'
   }
 ]
 
