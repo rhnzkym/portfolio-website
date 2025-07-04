@@ -14,19 +14,115 @@ export const useData = () => {
 const defaultExperiences = [
   {
     id: 1,
+    title: 'Ketua Departemen Riset & Teknologi',
+    company: 'Himpunan Mahasiswa Sistem Informasi – Telkom University Jakarta',
+    location: 'Jakarta, Indonesia',
+    period: 'Jan 2025 – Sekarang',
+    type: 'Organisasi',
+    description: 'Memimpin departemen teknologi, merancang program kerja, dan mengelola pelaksanaan kegiatan berbasis pengembangan skill teknologi.',
+    achievements: [
+      'Menginisiasi dan mengelola pembuatan website resmi himpunan',
+      'Mengoordinasi anggota dalam pelaksanaan program tahunan'
+    ],
+    technologies: ['Laravel', 'PHP', 'MySQL', 'HTML/CSS'],
+    color: 'bg-purple-500'
+  },
+  {
+    id: 2,
+    title: 'Anggota Tim – Pengabdian Masyarakat',
+    company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
+    location: 'SMK Nagrak Boarding School, Purwakarta',
+    period: 'Mar 2025 – Jul 2025',
+    type: 'Proyek Sosial',
+    description: 'Merancang dan membangun Sistem Informasi Manajemen Aset untuk sekolah mitra.',
+    achievements: [
+      'Menganalisis kebutuhan sistem bersama pihak sekolah',
+      'Membangun dan mengimplementasikan sistem informasi manajemen aset',
+      'Memberikan pelatihan penggunaan sistem kepada staf'
+    ],
+    technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'HTML/CSS'],
+    color: 'bg-blue-500'
+  },
+  {
+    id: 3,
     title: 'Asisten Praktikum',
     company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
     location: 'Jakarta, Indonesia',
-    period: 'Sep 2023 – Jun 2025',
-    type: 'Paruh Waktu / Akademik',
-    description: 'Mendampingi dosen dalam pelaksanaan praktikum untuk lima mata kuliah berbeda selama tiga semester. Tugas mencakup pembuatan soal kuis, penilaian laporan, pembimbingan teknis, serta membantu mahasiswa dalam menyelesaikan tugas dan proyek praktikum.\n\nMata kuliah yang dibantu:\n• Sistem Enterprise – Mengajarkan dasar penggunaan SAP dan menyusun soal kuis\n• Algoritma dan Pemrograman – Membimbing dasar bahasa pemrograman Python\n• Pengembangan Aplikasi Website – Mengajarkan HTML, PHP, serta framework Laravel\n• Pemrograman Berorientasi Objek (PBO) – Menjelaskan konsep OOP menggunakan Java (encapsulation, inheritance, dll)\n• Manajemen Rantai Pasok (MRP) – Membimbing praktikum SAP modul SCM 500',
+    period: 'Sep 2023 – Jan 2025',
+    type: 'Paruh Waktu',
+    description: 'Mendampingi dosen dalam pelaksanaan praktikum lima mata kuliah: Sistem Enterprise, Algoritma dan Pemrograman, PBO, Pengembangan Web, dan MRP.',
     achievements: [
-      'Menyusun soal kuis, rubrik penilaian, dan mengevaluasi laporan praktikum',
-      'Memberikan bimbingan teknis secara rutin dan diskusi aktif di kelas',
-      'Mendukung proses pembelajaran praktikum berbasis proyek'
+      'Menyusun soal kuis dan rubrik penilaian',
+      'Melakukan penilaian laporan praktikum',
+      'Membimbing teknis langsung di kelas',
+      'Membimbing teknis langsung di 5 mata kuliah selama 3 semester'
     ],
-    technologies: ['Python', 'Java', 'SAP (Fundamental & SCM 500)', 'Laravel', 'PHP', 'HTML', 'Visual Studio Code', 'Git'],
+    technologies: ['Python', 'Java', 'SAP', 'Laravel', 'PHP', 'HTML', 'Git', 'VS Code'],
     color: 'bg-green-500'
+  },
+  {
+    id: 4,
+    title: 'Staf Humas – Content Planner',
+    company: 'Himpunan Mahasiswa Sistem Informasi – Telkom University Jakarta',
+    location: 'Jakarta, Indonesia',
+    period: 'Jan 2024 – Des 2024',
+    type: 'Organisasi',
+    description: 'Menyusun dan menjadwalkan konten media sosial serta mendukung kegiatan internal organisasi.',
+    achievements: [
+      'Membuat kalender konten media sosial',
+      'Menjadi pengisi games/interaktif dalam acara himpunan',
+      'Berkoordinasi dengan tim media dan desain'
+    ],
+    technologies: [],
+    color: 'bg-pink-500'
+  },
+  {
+    id: 5,
+    title: 'Pengawas TPS – Pilkada Tangerang Selatan 2024',
+    company: 'Bawaslu Kota Tangerang Selatan',
+    location: 'Pamulang Barat',
+    period: 'Nov 2024',
+    type: 'Kegiatan Event',
+    description: 'Ditugaskan sebagai PTPS dalam Pilkada Serentak 2024 di wilayah Kelurahan Pamulang Barat.',
+    achievements: [
+      'Menjalankan tugas pengawasan penuh di hari H',
+      'Membuat laporan hasil pemantauan TPS secara lengkap',
+      'Menjaga netralitas dan ketertiban jalannya pemilu'
+    ],
+    technologies: [],
+    color: 'bg-red-500'
+  },
+  {
+    id: 6,
+    title: 'Liaison Officer – PKKMB 2024',
+    company: 'Telkom University Jakarta',
+    location: 'Jakarta, Indonesia',
+    period: 'Sep 2024',
+    type: 'Kegiatan Event / Relawan',
+    description: 'Mendampingi mahasiswa baru selama kegiatan orientasi kampus.',
+    achievements: [
+      'Menyampaikan informasi teknis dan jadwal kegiatan',
+      'Menjadi penghubung antara panitia dan peserta',
+      'Menjaga komunikasi serta suasana kondusif di kelompok'
+    ],
+    technologies: [],
+    color: 'bg-indigo-500'
+  },
+  {
+    id: 7,
+    title: 'Pengawas TPS – Pemilu Presiden 2024',
+    company: 'Bawaslu Kota Tangerang Selatan',
+    location: 'Pamulang Barat',
+    period: 'Feb 2024',
+    type: 'Kegiatan Event',
+    description: 'Bertugas mengawasi proses pemungutan dan penghitungan suara di TPS dalam Pemilu Presiden.',
+    achievements: [
+      'Menjalankan tugas pengawasan penuh di hari H',
+      'Membuat laporan hasil pemantauan TPS secara lengkap',
+      'Menjaga netralitas dan ketertiban jalannya pemilu'
+    ],
+    technologies: [],
+    color: 'bg-orange-500'
   }
 ]
 
