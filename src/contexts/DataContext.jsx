@@ -129,25 +129,108 @@ const defaultExperiences = [
 const defaultCertificates = [
   {
     id: 1,
-    title: 'React Developer Certification',
-    issuer: 'Meta (Facebook)',
-    date: 'December 2024',
-    image: null,
-    description: 'Comprehensive certification covering React fundamentals, hooks, state management, and advanced patterns.',
-    skills: ['React.js', 'JSX', 'Hooks', 'State Management'],
-    credentialId: 'META-REACT-2024-001',
-    verifyUrl: 'https://coursera.org/verify/react-cert'
+    title: 'IT Essentials',
+    issuer: 'Cisco Networking Academy (melalui CCNA SMK Telkom SPJ)',
+    date: '6 Agustus 2020',
+    image: {
+      id: 'cert_it_essentials',
+      data: '/cert-it-essentials.jpg',
+      name: 'IT Essentials Certificate'
+    },
+    description: 'Sertifikat ini menandakan keberhasilan dalam menyelesaikan kursus IT Essentials yang mencakup kemampuan dalam memilih dan menginstal komponen komputer, melakukan prosedur lab yang aman, menggunakan alat untuk pemeliharaan preventif dan pemecahan masalah, melakukan perbaikan dan pemeliharaan OS Windows, menjelaskan operasi jaringan area lokal dan konfigurasi perangkat untuk LAN dan Internet.',
+    skills: ['Komponen Komputer', 'Pemeliharaan Komputer', 'Pemecahan Masalah Komputer', 'Sistem Operasi (Windows, OS X, Linux)', 'Jaringan (LAN, Internet)', 'Perangkat Jaringan', 'Konfigurasi Perangkat', 'Keamanan Jaringan', 'Pemasangan Printer'],
+    credentialId: null,
+    verifyUrl: null
   },
   {
     id: 2,
-    title: 'JavaScript Algorithms and Data Structures',
-    issuer: 'freeCodeCamp',
-    date: 'November 2024',
-    image: null,
-    description: 'Mastered JavaScript fundamentals, ES6+ features, algorithms, and data structures implementation.',
-    skills: ['JavaScript', 'ES6+', 'Algorithms', 'Data Structures'],
-    credentialId: 'FCC-JS-2024-002',
-    verifyUrl: 'https://freecodecamp.org/verify/js-cert'
+    title: 'Sertifikat Kompetensi (Membangun Jaringan WAN dengan Kabel dan Nirkabel dengan Routing RIP pada Simulasi Paket Tracer)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '17 Desember 2021',
+    image: {
+      id: 'cert_wan_routing_rip',
+      data: '/cert-wan-routing-rip.jpg',
+      name: 'WAN Routing RIP Certificate'
+    },
+    description: 'Sertifikat ini diberikan setelah melaksanakan Uji Kualifikasi Kompetensi Level 5 dengan predikat "Kompeten" dalam materi "Membangun Jaringan WAN dengan Kabel dan Nirkabel dengan Routing RIP pada Simulasi Paket Tracer".',
+    skills: ['Jaringan WAN', 'Kabel dan Nirkabel', 'Routing Information Protocol (RIP)', 'Simulasi Packet Tracer', 'Konfigurasi Router'],
+    credentialId: 'No. 527 / KUR / SMK TEL / JKT / XII / 2021',
+    verifyUrl: null
+  },
+  {
+    id: 3,
+    title: 'Sertifikat Kompetensi (Design dan Konfigurasi Jaringan Routing Statis Router Pada Simulasi Jaringan Packet Tracer)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '26 Juni 2020',
+    image: {
+      id: 'cert_routing_statis',
+      data: '/cert-routing-statis.jpg',
+      name: 'Routing Statis Certificate'
+    },
+    description: 'Sertifikat ini diberikan setelah melaksanakan Uji Kualifikasi Kompetensi Level Dua dengan predikat "Kompeten" dalam materi "Design dan Konfigurasi Jaringan Routing Statis Router Pada Simulasi Jaringan Packet Tracer".',
+    skills: ['Desain Jaringan', 'Konfigurasi Router', 'Routing Statis', 'Simulasi Packet Tracer'],
+    credentialId: 'No. 374 / KUR / SMK TEL / VI / 2020',
+    verifyUrl: null
+  },
+  {
+    id: 4,
+    title: 'Sertifikat Kompetensi Keahlian (Teknik Komputer dan Jaringan)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '20 Juni 2022',
+    image: {
+      id: 'cert_tkj_keahlian',
+      data: '/cert-tkj-keahlian.jpg',
+      name: 'TKJ Keahlian Certificate'
+    },
+    description: 'Sertifikat ini menyatakan kelulusan dalam Uji Kompetensi Keahlian Teknik Komputer dan Jaringan, Program Studi Teknik Komputer Informatika, Bidang Studi Keahlian Teknologi Informasi dan Komunikasi dengan total nilai 100 predikat "Kompeten" berdasarkan peraturan terkait Pedoman Penyelenggaraan Uji Kompetensi Keahlian.',
+    skills: ['Teknik Komputer dan Jaringan', 'Teknologi Informasi dan Komunikasi'],
+    credentialId: 'Nomor : 480 / KUR / SMKBTELJKT / VI / 2022',
+    verifyUrl: null
+  },
+  {
+    id: 5,
+    title: 'Sertifikat Kompetensi (Merancang Dan Mengkonfigurasi Router Dengan Routing Dinamis Rip Versi 1 Pada Simulasi Packet Tracer)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '18 Desember 2020',
+    image: {
+      id: 'cert_rip_v1',
+      data: '/cert-rip-v1.jpg',
+      name: 'RIP v1 Certificate'
+    },
+    description: 'Sertifikat ini diberikan setelah melaksanakan Uji Kualifikasi Kompetensi Level Tiga dengan predikat "Kompeten" dalam materi "Merancang Dan Mengkonfigurasi Router Dengan Routing Dinamis Rip Versi 1 Pada Simulasi Packet Tracer".',
+    skills: ['Desain Jaringan', 'Konfigurasi Router', 'Routing Dinamis (RIP v1)', 'Simulasi Packet Tracer'],
+    credentialId: 'No. 681 / KUR / SMK TEL / XII / 2020',
+    verifyUrl: null
+  },
+  {
+    id: 6,
+    title: 'Sertifikat Kompetensi (Merancang dan mengkonfigurasi jaringan dengan router melalui routing dinamis RIP versi 2 pada simulasi Packet Tracer 8.0.0)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '25 Juni 2021',
+    image: {
+      id: 'cert_rip_v2',
+      data: '/cert-rip-v2.jpg',
+      name: 'RIP v2 Certificate'
+    },
+    description: 'Sertifikat ini diberikan setelah melaksanakan Uji Kualifikasi Kompetensi Level 4 (empat) dengan predikat "Kompeten" dalam materi "Merancang dan mengkonfigurasi jaringan dengan router melalui routing dinamis RIP versi 2 pada simulasi Packet Tracer 8.0.0".',
+    skills: ['Desain Jaringan', 'Konfigurasi Router', 'Routing Dinamis (RIP v2)', 'Simulasi Packet Tracer 8.0.0'],
+    credentialId: 'No. 342 / KUR / SMK TEL / VI / 2021',
+    verifyUrl: null
+  },
+  {
+    id: 7,
+    title: 'Sertifikat Kompetensi (Perakitan Personal Komputer dan Instalasi Operating Sistem Linux)',
+    issuer: 'SMK Telkom Sandhy Putra Jakarta (Yayasan Pendidikan Telkom)',
+    date: '20 Desember 2019',
+    image: {
+      id: 'cert_perakitan_linux',
+      data: '/cert-perakitan-linux.jpg',
+      name: 'Perakitan PC & Linux Certificate'
+    },
+    description: 'Sertifikat ini diberikan setelah melaksanakan Uji Kualifikasi Kompetensi Level Satu dengan predikat "Kompeten" dalam materi "Perakitan Personal Komputer dan Instalasi Operating Sistem Linux".',
+    skills: ['Perakitan Komputer (PC)', 'Instalasi Sistem Operasi (Linux)'],
+    credentialId: 'No. 993 / KUR / SMK TEL / XII / 2019',
+    verifyUrl: null
   }
 ]
 
