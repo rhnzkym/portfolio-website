@@ -69,7 +69,7 @@ const Certificates = () => {
                       <img
                         src={cert.image.data}
                         alt={cert.title}
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </>
@@ -175,12 +175,12 @@ const Certificates = () => {
               {/* Modal Content */}
               <div className="p-6 space-y-6">
                 {/* Certificate Preview */}
-                <div className="h-64 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 rounded-xl flex items-center justify-center overflow-hidden">
+                <div className="h-96 bg-gradient-to-br from-primary-100 to-purple-100 dark:from-primary-900/30 dark:to-purple-900/30 rounded-xl flex items-center justify-center overflow-hidden">
                   {selectedCert.image ? (
                     <img
                       src={selectedCert.image.data}
                       alt={selectedCert.title}
-                      className="w-full h-full object-cover rounded-xl"
+                      className="w-full h-full object-contain rounded-xl"
                     />
                   ) : (
                     <Award size={64} className="text-primary-600 dark:text-primary-400" />
@@ -228,16 +228,27 @@ const Certificates = () => {
                     <p className="text-sm text-gray-600 dark:text-gray-400 mb-2">
                       <strong>Credential ID:</strong> {selectedCert.credentialId}
                     </p>
-                    <motion.a
-                      href={selectedCert.verifyUrl}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      whileHover={{ scale: 1.05 }}
-                      className="inline-flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
-                    >
-                      <ExternalLink size={16} />
-                      <span>Verify Certificate</span>
-                    </motion.a>
+                    {selectedCert.image ? (
+                      <motion.button
+                        onClick={() => window.open(selectedCert.image.data, '_blank')}
+                        whileHover={{ scale: 1.05 }}
+                        className="inline-flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
+                      >
+                        <ExternalLink size={16} />
+                        <span>Detail Certificate</span>
+                      </motion.button>
+                    ) : selectedCert.verifyUrl ? (
+                      <motion.a
+                        href={selectedCert.verifyUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        whileHover={{ scale: 1.05 }}
+                        className="inline-flex items-center space-x-2 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 font-medium"
+                      >
+                        <ExternalLink size={16} />
+                        <span>Verify Certificate</span>
+                      </motion.a>
+                    ) : null}
                   </div>
                 </div>
               </div>
