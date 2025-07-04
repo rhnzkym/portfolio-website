@@ -14,37 +14,6 @@ export const useData = () => {
 const defaultExperiences = [
   {
     id: 1,
-    title: 'Ketua Departemen Riset & Teknologi',
-    company: 'Himpunan Mahasiswa Sistem Informasi – Telkom University Jakarta',
-    location: 'Jakarta, Indonesia',
-    period: 'Jan 2025 – Sekarang',
-    type: 'Organisasi',
-    description: 'Memimpin departemen teknologi, merancang program kerja, dan mengelola pelaksanaan kegiatan berbasis pengembangan skill teknologi.',
-    achievements: [
-      'Menginisiasi dan mengelola pembuatan website resmi himpunan',
-      'Mengoordinasi anggota dalam pelaksanaan program tahunan'
-    ],
-    technologies: ['Laravel', 'PHP', 'MySQL', 'HTML/CSS'],
-    color: 'bg-purple-500'
-  },
-  {
-    id: 2,
-    title: 'Anggota Tim – Pengabdian Masyarakat',
-    company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
-    location: 'SMK Nagrak Boarding School, Purwakarta',
-    period: 'Mar 2025 – Jul 2025',
-    type: 'Proyek Sosial',
-    description: 'Merancang dan membangun Sistem Informasi Manajemen Aset untuk sekolah mitra.',
-    achievements: [
-      'Menganalisis kebutuhan sistem bersama pihak sekolah',
-      'Membangun dan mengimplementasikan sistem informasi manajemen aset',
-      'Memberikan pelatihan penggunaan sistem kepada staf'
-    ],
-    technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'HTML/CSS'],
-    color: 'bg-blue-500'
-  },
-  {
-    id: 3,
     title: 'Asisten Praktikum',
     company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
     location: 'Jakarta, Indonesia',
@@ -61,7 +30,7 @@ const defaultExperiences = [
     color: 'bg-green-500'
   },
   {
-    id: 4,
+    id: 2,
     title: 'Staf Humas – Content Planner',
     company: 'Himpunan Mahasiswa Sistem Informasi – Telkom University Jakarta',
     location: 'Jakarta, Indonesia',
@@ -77,12 +46,44 @@ const defaultExperiences = [
     color: 'bg-pink-500'
   },
   {
+    id: 3,
+    title: 'Pengawas TPS – Pemilu Presiden 2024',
+    company: 'Bawaslu Kota Tangerang Selatan',
+    location: 'Pamulang Barat',
+    period: 'Feb 2024',
+    type: 'Event',
+    description: 'Bertugas mengawasi proses pemungutan dan penghitungan suara di TPS dalam Pemilu Presiden.',
+    achievements: [
+      'Menjalankan tugas pengawasan penuh di hari H',
+      'Membuat laporan hasil pemantauan TPS secara lengkap',
+      'Menjaga netralitas dan ketertiban jalannya pemilu'
+    ],
+    technologies: [],
+    color: 'bg-orange-500'
+  },
+  {
+    id: 4,
+    title: 'Liaison Officer – PKKMB 2024',
+    company: 'Telkom University Jakarta',
+    location: 'Jakarta, Indonesia',
+    period: 'Sep 2024',
+    type: 'Event',
+    description: 'Mendampingi mahasiswa baru selama kegiatan orientasi kampus.',
+    achievements: [
+      'Menyampaikan informasi teknis dan jadwal kegiatan',
+      'Menjadi penghubung antara panitia dan peserta',
+      'Menjaga komunikasi serta suasana kondusif di kelompok'
+    ],
+    technologies: [],
+    color: 'bg-indigo-500'
+  },
+  {
     id: 5,
     title: 'Pengawas TPS – Pilkada Tangerang Selatan 2024',
     company: 'Bawaslu Kota Tangerang Selatan',
     location: 'Pamulang Barat',
     period: 'Nov 2024',
-    type: 'Kegiatan Event',
+    type: 'Event',
     description: 'Ditugaskan sebagai PTPS dalam Pilkada Serentak 2024 di wilayah Kelurahan Pamulang Barat.',
     achievements: [
       'Menjalankan tugas pengawasan penuh di hari H',
@@ -94,35 +95,34 @@ const defaultExperiences = [
   },
   {
     id: 6,
-    title: 'Liaison Officer – PKKMB 2024',
-    company: 'Telkom University Jakarta',
+    title: 'Ketua Departemen Riset & Teknologi',
+    company: 'Himpunan Mahasiswa Sistem Informasi – Telkom University Jakarta',
     location: 'Jakarta, Indonesia',
-    period: 'Sep 2024',
-    type: 'Kegiatan Event / Relawan',
-    description: 'Mendampingi mahasiswa baru selama kegiatan orientasi kampus.',
+    period: 'Jan 2025 – Sekarang',
+    type: 'Organisasi',
+    description: 'Memimpin departemen teknologi, merancang program kerja, dan mengelola pelaksanaan kegiatan berbasis pengembangan skill teknologi.',
     achievements: [
-      'Menyampaikan informasi teknis dan jadwal kegiatan',
-      'Menjadi penghubung antara panitia dan peserta',
-      'Menjaga komunikasi serta suasana kondusif di kelompok'
+      'Menginisiasi dan mengelola pembuatan website resmi himpunan',
+      'Mengoordinasi anggota dalam pelaksanaan program tahunan'
     ],
-    technologies: [],
-    color: 'bg-indigo-500'
+    technologies: ['Laravel', 'PHP', 'MySQL', 'HTML/CSS'],
+    color: 'bg-purple-500'
   },
   {
     id: 7,
-    title: 'Pengawas TPS – Pemilu Presiden 2024',
-    company: 'Bawaslu Kota Tangerang Selatan',
-    location: 'Pamulang Barat',
-    period: 'Feb 2024',
-    type: 'Kegiatan Event',
-    description: 'Bertugas mengawasi proses pemungutan dan penghitungan suara di TPS dalam Pemilu Presiden.',
+    title: 'Anggota Tim – Pengabdian Masyarakat',
+    company: 'Program Studi Sistem Informasi – Telkom University Jakarta',
+    location: 'SMK Nagrak Boarding School, Purwakarta',
+    period: 'Mar 2025 – Jul 2025',
+    type: 'Proyek Sosial',
+    description: 'Merancang dan membangun Sistem Informasi Manajemen Aset untuk sekolah mitra.',
     achievements: [
-      'Menjalankan tugas pengawasan penuh di hari H',
-      'Membuat laporan hasil pemantauan TPS secara lengkap',
-      'Menjaga netralitas dan ketertiban jalannya pemilu'
+      'Menganalisis kebutuhan sistem bersama pihak sekolah',
+      'Membangun dan mengimplementasikan sistem informasi manajemen aset',
+      'Memberikan pelatihan penggunaan sistem kepada staf'
     ],
-    technologies: [],
-    color: 'bg-orange-500'
+    technologies: ['Laravel', 'PHP', 'MySQL', 'Bootstrap', 'HTML/CSS'],
+    color: 'bg-blue-500'
   }
 ]
 
